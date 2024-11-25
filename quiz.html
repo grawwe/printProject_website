@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+</head>
+<body onload="NextQuestion(0)">
+    
+    <div class="container">
+        <!--верхняя панель-->
+        <div class="header">
+            <!--левая часть панели ЛОГО-->
+            <div class="header_left">
+                <img src="imgs/logo.png" alt="HSPM">
+            </div>
+            <!--правая часть панели ССЫЛКИ-->
+            <div class="header_right">
+                <a href="index.html" class="header_btn"><div class="ptext">Главная страница</div></a>
+                <a href="materials.html" class="header_btn"><div class="ptext">Полезные материалы</div></a>
+                <a href="about.html" class="header_btn"><div class="ptext">О проекте</div></a>
+                <a href="team.html" class="header_btn"><div class="ptext">Наша команда</div></a>
+                <a href="contact.html" class="header_btn"><div class="ptext">Обратная связь</div></a>
+            </div>
+        </div>
+        <!--тест-->
+        <main>
+            <!-- creating a modal for when quiz ends -->
+            <div class="modal-container" id="score-modal">
+    
+                <div class="modal-content-container">
+    
+                    <h1>Вы завершили тест!</h1>
+    
+                    <div class="grade-details">
+                        <p>Ошибок : <span id="wrong-answers"></span></p>
+                        <p>Правильных ответов : <span id="right-answers"></span></p>
+                        <p>Точность ответов : <span id="grade-percentage"></span>%</p>
+                        <p ><span id="remarks"></span></p>
+                    </div>
+    
+                    <div class="modal-button-container">
+                        <button onclick="closeScoreModal()">Продолжить</button>
+                    </div>
+    
+                </div>
+            </div>
+    <!-- end of modal of quiz details-->
+    
+            <div class="game-quiz-container">
+    
+                <div class="game-details-container">
+                    <h1>Счет : <span id="player-score"></span> / 40</h1>
+                    <h1>Вопрос : <span id="question-number"></span> / 40</h1>
+                </div>
+    
+                <div class="game-question-container">
+                    <h1 id="display-question"></h1>
+                </div>
+    
+                <div class="game-options-container">
+    
+                   <div class="modal-container" id="option-modal">
+    
+                        <div class="modal-content-container">
+                             <h1>Сначала выберите ответ</h1>
+    
+                             <div class="modal-button-container">
+                                <button onclick="closeOptionModal()">Продолжить</button>
+                            </div>
+    
+                        </div>
+    
+                   </div>
+    
+                    <span>
+                        <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                        <label for="option-one" class="option" id="option-one-label"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                        <label for="option-two" class="option" id="option-two-label"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                        <label for="option-three" class="option" id="option-three-label"></label>
+                    </span>
+
+                    <span>
+                        <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                        <label for="option-four" class="option" id="option-four-label"></label>
+                    </span>
+    
+                </div>
+    
+                <div class="next-button-container">
+                    <button onclick="handleNextQuestion()">Следующий вопрос</button>
+                </div>
+    
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

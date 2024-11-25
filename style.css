@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    background-color: 	#f0f0f0;
+}
+
+.header{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 111px;
+    background-color:	#5c9ffb;
+}
+
+.header_left{
+    width: 10%;
+    height: 80px;
+    display: flex;
+    margin: 15px;
+}
+
+.header_right{
+    width: 99%;
+    height: auto;
+    display: flex;
+}
+
+.header_btn{
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 18%;
+    height: 60px;
+    min-width: 150px;
+    border-radius: 25px;
+    background-color: #c1c1c1;
+    opacity: .5;
+    transition: all 0.4s ease;
+
+}
+  
+.header_btn:hover {
+    transition: all 0.2s ease 0s;
+    background-color: #d8d8d8;
+    height: 75px;
+    width: 22%;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_btn:active{
+    transition: all 0.3s ease 0.1s;
+}
+
+.middle{
+    display: flex;
+    width: auto;
+    height: 100%;
+    justify-content: space-evenly;
+    background-color: 	#f0f0f0;
+}
+
+.middle_test{
+    padding: 45px;
+    width: auto;
+    justify-content:center;
+    height: 100%;
+    min-height: 848px;
+    background-color: 	#f0f0f0;
+}
+
+.middle_test h3{
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 35px;
+    color: 	#222222;
+}
+
+.middle_test h2{
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 30px;
+    color: 	#222222;
+    opacity: 0.7;
+    padding-bottom: 25px;
+}
+
+.middle_test h1{
+    text-align: left;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 20px;
+    color: 	#222222;
+    padding-left: 50px;
+    opacity: 0.7;
+    padding-top: 10px;
+}
+
+.footer{
+    margin: 0 auto;
+    width: 100%;
+    min-height: 180;
+    height: auto;
+    background-color: #5c9ffb;
+}
+
+.footer p{
+    text-align: center;
+    font-size: auto;
+    font-size: 12px;
+    line-height: 25px;
+    opacity: .7;
+    padding: auto;
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222;
+}
+
+.ptext{
+    text-align: center;
+    font-size: auto;
+    font-size: 15px;
+    line-height: 30px;
+    opacity: .9;
+    padding: auto;
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222;
+}
+
+a{
+    text-decoration: none;
+}
+
+.middle_team{
+    justify-content: space-evenly;
+    padding: 45px;
+    background-color: 	#f0f0f0;
+}
+
+.person {
+    width:80%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  
+  .person img {
+    display: block;
+    max-width: 15%;
+  }
+  
+  .person h3 {
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222;
+    font-size: 20px;
+  }
+  
+  .person h1 {
+    font-size: 20px;
+    font-family: "IBM Plex Serif", serif;
+    color: 	#222222;
+    opacity: .7;
+  } 
+
+  .item{
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .item h3{
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .item h2{
+    color: 	#222222;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+    opacity: 0.9;
+  }
+
+.item_links img{
+    max-width: 45%;
+}
+
+.headers_text{
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222;
+    font-size: 15px;
+    text-align: left;
+    padding: 30px;
+}
+
+.quiz_btn{
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 30%;
+    height: 100px;
+    min-width: 160px;
+    border-radius: 25px;
+    background-color: #5c9ffb;
+    opacity: .8;
+    transition: all 0.4s ease;
+}
+
+.quiz_btn:hover {
+    transition: all 0.2s ease 0s;
+    background-color: #5c9ffb;
+    height: 120px;
+    width: 35%;
+    opacity: .6;
+    background-position: center;
+    background-size: cover;
+}
+
+.quiz_btn:active{
+    transition: all 0.3s ease 0.1s;
+}
+
+.btext{
+    text-align: center;
+    font-size: auto;
+    font-size: 30px;
+    line-height: 30px;
+    opacity: .9;
+    padding: auto;
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222; 
+}
+
+.freespace{
+    padding: 160px;
+}
+
+main{
+    width: 100%;
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-quiz-container{
+    width: 80rem;
+    height: 40rem;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+
+.game-details-container{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-details-container h1{
+    font-size: 1.5rem;
+    font-family: "Press Start 2P", system-ui;
+    color: 	#222222;
+}
+
+.game-question-container{
+    width: 85%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #c1c1c1;
+    border-radius: 25px;
+}
+
+.game-question-container h1{
+    font-size: 1.05rem;
+    text-align: center;
+    padding: 3px;
+    color: 	#222222;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.game-options-container{
+    width: 85%;
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "IBM Plex Serif", serif;
+    color: 	#222222;
+    font-size: 0.9rem;
+}
+
+.game-options-container span{
+    width: 48%;
+    height: 6rem;
+    border: 2px solid #c1c1c1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+span label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-weight: 600;
+    color: rgb(22, 22, 22);
+}
+
+input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+
+input[type=radio]:checked ~ .option {
+    background: #5c9ffb;
+}
+
+.next-button-container{
+    width: 60%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.next-button-container button{
+    width: 40rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: none;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    border: 2px solid #c1c1c1;
+    cursor: pointer;
+    outline: none;
+    font-family: "IBM Plex Serif", serif;
+    color: 	#222222;
+    font-size: 1.3rem;
+}
+.next-button-container button:hover{
+    background-color: #d8d8d8;
+}
+
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.modal-content-container{
+    height: 20rem;
+    width: 25rem;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.modal-content-container h1{
+    font-size: 1.3rem;
+    height: 3rem;
+    color: lightgray;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.grade-details{
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grade-details p{
+    color: white;
+    text-align: center;
+}
+
+.modal-button-container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Press Start 2P", system-ui;
+    opacity: 0.9;
+}
+
+.modal-button-container button{
+    width: 15rem;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: "Press Start 2P", system-ui;
+}
+.modal-button-container button:hover{
+    background-color: rgb(83, 82, 82);
+}
+
+@media(min-width : 300px) and (max-width : 350px){
+    .game-quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .game-details-container h1{
+        font-size: 0.8rem;
+     }
+
+     .game-question-container{
+        height: 6rem;
+     }
+     .game-question-container h1{
+       font-size: 0.8rem;
+    }
+
+    .game-options-container span{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .game-options-container span label{
+        font-size: 0.8rem;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+
+    .modal-content-container h1{
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width : 350px) and (max-width : 700px){
+   .game-quiz-container{
+       width: 90%;
+       height: 80vh;
+    }
+    .game-details-container h1{
+        font-size: 1rem;
+    }
+
+    .game-question-container{
+        height: 8rem;
+    }
+
+    .game-question-container h1{
+        font-size: 0.9rem;
+     }
+
+    .game-options-container span{
+        width: 90%;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+    .modal-content-container h1{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
