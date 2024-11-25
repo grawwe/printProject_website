@@ -493,7 +493,7 @@ function handleEndGame() {
         remark = "Отличная работа!"
         remarkColor = "#bbdbb4"
     }
-    const playerGrade = (playerScore / 10) * 100
+    const playerGrade = (playerScore / 40) * 100
 
     //data to display to score board
     document.getElementById('remarks').innerHTML = remark
