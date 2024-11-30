@@ -588,6 +588,99 @@ function handleEndGameGraph(){
     document.getElementById('score-graph').style.display = 'flex'
 }
 
+function handleEndGameRank(){
+    let remark_el = null
+    let remarkColor_el = null
+    let remark_tp = null
+    let remarkColor_tp = null
+    let remark_st = null
+    let remarkColor_st = null
+    let remark_te = null
+    let remarkColor_te = null
+
+    let rank_el = null
+    let rank_tp = null
+    let rank_st = null
+    let rank_te = null
+    
+    if (elScore <= 3) {
+        rank_el = "Ранг C"
+        remark_el = "Начало пути! Продолжай учиться, чтобы глубже понять основы электрофотографии."
+        remarkColor_el = "rgb(255, 99, 132)"
+    } else if (elScore >= 4 && elScore <= 8) {
+        rank_el = "Ранг B"
+        remark_el = "Ты на верном пути! Нужно чуть больше практики, и всё получится."
+        remarkColor_el = "#fdae61"
+    } else if (elScore >= 9) {
+        rank_el = "Ранг A"
+        remark_el = "Твои знания достойны учебника! Электрофотография для тебя — как открытая книга."
+        remarkColor_el = "rgb(75, 192, 192)"
+    }
+
+    if (tpScore <= 3) {
+        rank_tp = "Ранг C"
+        remark_tp = "Не сдавайся! Попробуй изучить принципы термопечати еще разок."
+        remarkColor_tp = "rgb(255, 99, 132)"
+    } else if (tpScore >= 4 && tpScore <= 8) {
+        rank_tp = "Ранг B"
+        remark_tp = "Неплохой результат! Ты почти разбираешься в термопечати, но нужно немного доработать детали."
+        remarkColor_tp = "#fdae61"
+    } else if (tpScore >= 9) {
+        rank_el = "Ранг A"
+        remark_tp = "Мастер термографии! Твои знания впечатляют!"
+        remarkColor_tp = "rgb(75, 192, 192)"
+    }
+
+    if (stScore <= 3) {
+        rank_st = "Ранг C"
+        remark_st = "Первые шаги в струйной печати сделаны, но впереди ещё много открытий."
+        remarkColor_st = "rgb(255, 99, 132)"
+    } else if (stScore >= 4 && stScore <= 8) {
+        rank_st = "Ранг B"
+        remark_st = "Отличный прогресс! Ты уже неплохо понимаешь устройство струйной печати."
+        remarkColor_st = "#fdae61"
+    } else if (stScore >= 9) {
+        rank_st = "Ранг A"
+        remark_st = "Эксперт по струйной печати! Твои знания на высоте."
+        remarkColor_st = "rgb(75, 192, 192)"
+    }
+
+    if (teScore <= 3) {
+        rank_te = "Ранг C"
+        remark_te = "Терминология пока сложна, но не сдавайся!"
+        remarkColor_te = "rgb(255, 99, 132)"
+    } else if (teScore >= 4 && teScore <= 8) {
+        rank_te = "Ранг B"
+        remark_te = "Продолжай изучать! Ты близок к тому, чтобы свободно владеть терминами."
+        remarkColor_te = "#fdae61"
+    } else if (teScore >= 9) {
+        rank_te = "Ранг A"
+        remark_te = "Терминологический гуру! Ты точно знаешь, о чём говоришь."
+        remarkColor_te = "rgb(75, 192, 192)"
+    }
+
+    document.getElementById('remarks_el').innerHTML = remark_el
+    document.getElementById('remarks_el').style.color = remarkColor_el
+    document.getElementById('remarks_tp').innerHTML = remark_tp
+    document.getElementById('remarks_tp').style.color = remarkColor_tp
+    document.getElementById('remarks_st').innerHTML = remark_st
+    document.getElementById('remarks_st').style.color = remarkColor_st
+    document.getElementById('remarks_te').innerHTML = remark_te
+    document.getElementById('remarks_te').style.color = remarkColor_te
+
+    document.getElementById('ranks_el').innerHTML = rank_el
+    document.getElementById('ranks_el').style.color = remarkColor_el
+    document.getElementById('ranks_tp').innerHTML = rank_tp
+    document.getElementById('ranks_tp').style.color = remarkColor_tp
+    document.getElementById('ranks_st').innerHTML = rank_st
+    document.getElementById('ranks_st').style.color = remarkColor_st
+    document.getElementById('ranks_te').innerHTML = rank_te
+    document.getElementById('ranks_te').style.color = remarkColor_te
+
+    document.getElementById('score-rank').style.display = 'flex'
+
+}
+
 
 //функции закрытия окон со статистикой
 function closeGameStats(){
@@ -596,6 +689,10 @@ function closeGameStats(){
 
 function closeGameGraph(){
     document.getElementById('score-graph').style.display = "none"
+}
+
+function closeGameRank(){
+    document.getElementById('score-rank').style.display = "none"
 }
 
 //функция для повторного запуска теста

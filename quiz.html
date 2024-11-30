@@ -62,11 +62,38 @@
                         </div>
                     </div>
                     <div class="modal-button-container">
-                        <a href="quiz.html"><button onclick="closeGameGraph();restart()">Начать заново</button></a>
+                        <button onclick="closeGameGraph();handleEndGameRank()">Продолжить</button>
                     </div>
                 </div>
-                
             </div>
+
+
+            <!--Окно рангов-->
+            <div class="modal-container" id="score-rank">
+                <div class="rank-content-container">
+                    
+                    <h1>Ваши Ранги</h1>
+                    <div class="rank-details">
+                        <p>Электрофотография : </p>
+                        <span id="ranks_el"></span>
+                        <span id="remarks_el"></span>
+                        <p>Термографическая печать : </p>
+                        <span id="ranks_tp"></span>
+                        <span id="remarks_tp"></span>
+                        <p>Струйная печать : </p>
+                        <span id="ranks_st"></span>
+                        <span id="remarks_st"></span>
+                        <p>Терминология : </p>
+                        <span id="ranks_te"></span>
+                        <span id="remarks_te"></span>
+                    </div>
+                    <div class="modal-button-container">
+                        <a href="quiz.html"><button onclick="closeGameStats();closeGameGraph();closeGameRank();restart()">Начать заново</button></a>
+                    </div>
+                </div>
+            </div>
+
+
     <!--контейнер с тестом-->
     
             <div class="game-quiz-container">

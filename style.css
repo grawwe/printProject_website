@@ -412,13 +412,13 @@ input[type=radio]:checked ~ .option {
 }
 
 .next-button-container{
-    width: 60%;
+    width: 65%;
     height: 3rem;
     display: flex;
     justify-content: center;
 }
 .next-button-container button{
-    width: 40rem;
+    width: 45rem;
     height: 3rem;
     border-radius: 10px;
     background: none;
@@ -465,6 +465,18 @@ input[type=radio]:checked ~ .option {
     border-radius: 25px;
 }
 
+.rank-content-container{
+    height: 35rem;
+    width: 37rem;
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    font-family: "Press Start 2P", system-ui;
+}
+
 .graph-content-container{
     height: 800px;
     width: 800px;
@@ -502,6 +514,33 @@ input[type=radio]:checked ~ .option {
     align-items: center;
     justify-content: space-around;
     font-family: "IBM Plex Serif", serif;
+}
+
+.rank-details{
+    width: 35rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.rank-details span{
+    color: #222222;
+    text-align: left;
+    align-items: left;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.rank-details p{
+    color: #222222;
+    text-align: left;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    padding: 5px;
 }
 
 .graph-details{
