@@ -12,4 +12,4 @@
 HTML, CSS, JavaScript, библиотека chart.js (для отрисовки графиков)
 
 Сайт:
-grawwe.github.io/printProject_website/
+[grawwe.github.io/printProject_website/](https://grawwe.github.io/printProject_website/)
